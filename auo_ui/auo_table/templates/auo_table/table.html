@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <link href="{% static 'main.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'base.css' %}" rel="stylesheet"> -->
+    <header class="w-full p-4 bg-white shadow-xl z-50 sm:fixed">
+        <div class="flex items-center justify-between text-lg">
+            <div id="banner" class="">
+                <a href="#" class="flex items-center">
+                    <img src="{% static 'logo.svg' %}" alt="網站 Logo" class="h-8" />
+                    <span
+                        class="ml-6 pl-6 self-center whitespace-nowrap border-l-2 border-[#005087] font-bold text-[#005087]"
+                        >網站名稱</span
+                    >
+                </a>
+            </div>
+            <div id="nav" class="flex items-center space-x-6 font-semibold text-[#005087]">
+                <div class="group relative px-1">
+                    <a href="#">Solutions</a>
+                    <span
+                        className="absolute -bottom-7 left-0 w-0 h-[5px] bg-[#64DCF0] transition-all delay-150 group-hover:delay-300 duration-300 group-hover:w-full" />
+                </div>
+                <div class="group relative">
+                    <a href="#">Service</a>
+                    <span
+                        className="absolute -bottom-7 left-0 w-0 h-[5px] bg-[#64DCF0] transition-all delay-150 group-hover:delay-300 duration-300 group-hover:w-full" />
+                </div>
+                <div class="group relative">
+                    <a href="#">Support</a>
+                    <span
+                        className="absolute -bottom-7 left-0 w-0 h-[5px] bg-[#64DCF0] transition-all delay-150 group-hover:delay-300 duration-300 group-hover:w-full" />
+                </div>
+                <button
+                    class="rounded-full bg-[#F0F0F0] p-2 hover:bg-[#64DCF0] hover:delay-150">
+                    <a href="#"><IconLanguage /></a>
+                </button>
+                <button
+                    class="rounded-full bg-[#F0F0F0] p-2 hover:bg-[#64DCF0] hover:delay-150">
+                    <a href="#"><IconSearch /></a>
+                </button>
+            </div>
+        </div>
+    </header>
+</html>
